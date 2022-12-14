@@ -5,9 +5,9 @@ import json, os, string, sys, threading, logging, time, re, random
 import openai
 
 #OpenAI API key
-aienv = os.getenv('OPENAI_KEY')
+aienv = os.getenv('OPENAI_API_KEY')
 if aienv == None:
-    openai.api_key = "2LA905JqowgThs1RbWH5T3BlbkFJtlPSjHwqh7O4V4oeL0ut"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
